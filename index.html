@@ -6,32 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="logo">
+        <img src="./pics/back.png" class="img">
+    </div>
+    <img src="./pics/timer.jpg" alt="" class="back" width="400px" style="position: absolute; right: 0; bottom: 0;">
+    <img src="./pics/timer2.jpg" alt="" class="back1" width="400px" style="position: absolute; left: 0; bottom: 0;">
     <div class="content">
         <div class="text_wrapper">
-            <h1 class="text">ЕГЭ ДЛЯ РОДИТЕЛЕЙ</h1>
+            <h1 class="text">ДЕНЬ СДАЧИ ЕГЭ С РОДИТЕЛЯМИ</h1>
         </div>
         <div class="image_wrapper">
-            <img src="./picture.jpg" alt="" class="picture" width="700px">
+            <img src="./pics/picture.jpg" alt="" class="picture" width="700px" >
         </div>
         <div class="timer_wrapper">
-            <div class="time_block">
-                <span class="minutes">00</span>
-                <span class="name">МИНУТ</span>
+            <div class="start_time">
+                <span class="time_block start">00:00:00</span>
+                <span class="name">Время начала</span>
             </div>
-            <div class="time_block">
-                <span class="points">:</span>
+            <div class="last_time">
+                <span class="time_block last">00:00:00</span>
+                <span class="name">Время окончания</span>
             </div>
-            <div class="time_block">
-                <span class="seconds">00</span>
-                <span class="name">СЕКУНД</span>
-            </div>
+            <div class="current_time">
+                <span class="time_block current">00:00:00</span>
+                <span class="name">Текущее время</span>
+            </div> 
+            
         </div>
         <div class="buttons">
             <button class="start_button">Старт!</button>
@@ -40,7 +47,7 @@
             <h1 class="text">ВРЕМЯ ВЫШЛО! </h1>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
